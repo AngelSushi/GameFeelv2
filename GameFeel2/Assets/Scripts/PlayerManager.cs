@@ -13,6 +13,7 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private GameObject _pewPewMunition;
     [SerializeField] private GameObject _pewPewPosisition;
     [SerializeField] private GameObject _pewPewParent;
+    [SerializeField] private PlayerUpgrade PU;
 
     [Header("condition")]
     private bool _moveLeft = false;
