@@ -6,74 +6,37 @@ using UnityEngine;
 
 public class EnemyManager : MonoBehaviour
 {
-    [SerializeField] private List<EnemyBehavior> enemies = new List<EnemyBehavior>();
+    public List<EnemyBehavior> enemies = new List<EnemyBehavior>();
 
-    public event Action OnEnemyMoove;
+    private static EnemyManager _instance;
 
-    [SerializeField] private int boundsMin;
-    [SerializeField] private int boundsMax;
-
-    public bool _hasSwitchLine;
-    private float _sign = 1;
-    
-    private void Start()
+    public static EnemyManager Instance
     {
-        OnEnemyMoove += OnEnemyMooveFunc;
-        StartCoroutine(Moove());
+        get => _instance;
     }
 
-    private void OnDestroy()
+    private void Awake()
     {
-        OnEnemyMoove -= OnEnemyMooveFunc;
+        if (_instance == null)
+        {
+            _instance = this;
+        }
     }
-
 
     private void Update()
     {
-        foreach (EnemyBehavior enemy in FindBoundsMinEnemies())
+        foreach (EnemyBehavior enemy in GetShootEnemies())
         {
-        }
-        
-        foreach (EnemyBehavior enemy in FindBoundsMaxEnemies())
-        {
-        }
-    }
+            RaycastHit2D hit = Physics2D.Raycast(enemy.transform.position, Vector3.up * -1, 50, 1 << 7);
 
-    private IEnumerator Moove()
-    {
-        yield return new WaitForSeconds(1f);
-        
-        MoveEnemy();
-        StartCoroutine(Moove());
-    }
-
-    public void MoveEnemy() => OnEnemyMoove?.Invoke();
-
-
-    private void OnEnemyMooveFunc()
-    {
-        if (FindBoundsMaxEnemies().Any(enemy => (int)enemy.transform.position.x == boundsMax)
-            && !_hasSwitchLine && _sign > 0)
-        {
-            enemies.ForEach(enemy => enemy.Direction = new Vector2(0, -1));
-            _hasSwitchLine = true;
-            
-        }
-        else if (FindBoundsMinEnemies().Any(enemy => (int)enemy.transform.position.x == boundsMin)
-                 && !_hasSwitchLine && _sign < 0)
-        {
-            enemies.ForEach(enemy => enemy.Direction = new Vector2(0, -1));
-            _hasSwitchLine = true;
-        }
-        else
-        {
-             _sign = _hasSwitchLine ? -_sign : _sign;
-            enemies.ForEach(enemy => enemy.Direction = new Vector2(1 * _sign,0));
-            _hasSwitchLine = false;
+            if (hit.collider != null)
+            {
+                enemy.Shoot();
+            }
         }
     }
 
-    private List<EnemyBehavior> FindBoundsMaxEnemies()
+    public List<EnemyBehavior> FindBoundsMaxEnemies()
     {
         List<EnemyBehavior> boundsEnemies = new List<EnemyBehavior>();
 
@@ -96,7 +59,7 @@ public class EnemyManager : MonoBehaviour
         return boundsEnemies;
     }
 
-    private List<EnemyBehavior> FindBoundsMinEnemies()
+    public List<EnemyBehavior> FindBoundsMinEnemies()
     {
         List<EnemyBehavior> boundsEnemies = new List<EnemyBehavior>();
 
@@ -117,5 +80,23 @@ public class EnemyManager : MonoBehaviour
         }
 
         return boundsEnemies;
+    }
+
+    public List<EnemyBehavior> GetShootEnemies()
+    {
+        List<EnemyBehavior> shootEnemies = new List<EnemyBehavior>();
+
+        foreach (EnemyBehavior enemy in enemies)
+        {
+            if (!Physics2D.Raycast(enemy.transform.position + Vector3.up * -1, Vector3.up * -1, 50, 1 << 6))
+            {
+                shootEnemies.Add(enemy);
+            }
+        }
+        
+       // shootEnemies.ForEach(enemy => Debug.Log("name " + enemy.name));
+
+
+        return shootEnemies;
     }
 }

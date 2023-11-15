@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Console
+  m_Title: Game
   m_RootView: {fileID: 8}
   m_MinSize: {x: 875, y: 321}
   m_MaxSize: {x: 10000, y: 10000}
@@ -43,8 +43,8 @@ MonoBehaviour:
     y: 631
     width: 574
     height: 316
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 100
+  controlID: 95
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 99
+  controlID: 40
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -145,8 +145,8 @@ MonoBehaviour:
     y: 0
     width: 328
     height: 561
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -319,8 +319,8 @@ MonoBehaviour:
     y: 0
     width: 1018
     height: 561
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -371,7 +371,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Prefabs
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -379,16 +379,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\IIM\A4_2023_2024\Gamefeel\GameFeel2\GameFeelv2\GameFeel2
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 82720000
-    m_LastClickedID: 29314
-    m_ExpandedIDs: 000000008272000000ca9a3b
+    m_SelectedIDs: 48740000
+    m_LastClickedID: 29768
+    m_ExpandedIDs: 000000008672000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -416,7 +416,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000082720000
+    m_ExpandedIDs: 0000000086720000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -556,23 +556,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: ee700000
-      m_LastClickedID: 28910
-      m_ExpandedIDs: 16fbffffa4710000
+      m_SelectedIDs: 5a71000022710000cc7100008c710000a07100006e71000082710000ec710000d6710000ea700000fa70000078710000b87100000e71000004710000007200003c71000046710000ae710000c271000032710000e0710000e070000096710000f671000064710000
+      m_LastClickedID: 29028
+      m_ExpandedIDs: f4fafffff8fafffffafaffffaa710000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: yellow
-        m_OriginalName: yellow
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 29012
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 6}
       m_SearchString: 
@@ -977,9 +977,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -1.3729945, y: 3.389356, z: -0.101604015}
+    m_Target: {x: 0.15842265, y: 2.1532435, z: 0.03131168}
     speed: 2
-    m_Value: {x: -1.3729945, y: 3.389356, z: -0.101604015}
+    m_Value: {x: 0.15842265, y: 2.1532435, z: 0.03131168}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1029,9 +1029,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 9.250093
+    m_Target: 6.9852176
     speed: 2
-    m_Value: 9.250093
+    m_Value: 6.9852176
   m_Ortho:
     m_Target: 1
     speed: 2
