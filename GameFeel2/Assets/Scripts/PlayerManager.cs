@@ -73,4 +73,6 @@ public class PlayerManager : MonoBehaviour
         yield return new WaitForSeconds(_shootCD);
         _canShoot = true;
     }
+
+
 }
