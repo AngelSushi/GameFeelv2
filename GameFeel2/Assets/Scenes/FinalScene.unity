@@ -135,9 +135,9 @@ GameObject:
   - component: {fileID: 66622962}
   - component: {fileID: 66622963}
   - component: {fileID: 66622964}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: yellow (23)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -221,7 +221,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a639af5771ac25849b70abbbd6e62bb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 50
 --- !u!61 &66622964
@@ -281,9 +280,9 @@ GameObject:
   - component: {fileID: 110395702}
   - component: {fileID: 110395703}
   - component: {fileID: 110395704}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: yellow (9)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -367,7 +366,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a639af5771ac25849b70abbbd6e62bb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 50
 --- !u!61 &110395704
@@ -502,9 +500,9 @@ GameObject:
   - component: {fileID: 183864561}
   - component: {fileID: 183864562}
   - component: {fileID: 183864563}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: yellow (10)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -588,7 +586,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a639af5771ac25849b70abbbd6e62bb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 50
 --- !u!61 &183864563
@@ -648,9 +645,9 @@ GameObject:
   - component: {fileID: 206220113}
   - component: {fileID: 206220114}
   - component: {fileID: 206220115}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: yellow (14)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -734,7 +731,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a639af5771ac25849b70abbbd6e62bb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 50
 --- !u!61 &206220115
@@ -794,9 +790,9 @@ GameObject:
   - component: {fileID: 509755878}
   - component: {fileID: 509755879}
   - component: {fileID: 509755880}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: yellow (13)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -880,7 +876,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a639af5771ac25849b70abbbd6e62bb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 50
 --- !u!61 &509755880
@@ -1077,9 +1072,9 @@ GameObject:
   - component: {fileID: 583465646}
   - component: {fileID: 583465647}
   - component: {fileID: 583465648}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: yellow (1)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1163,7 +1158,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a639af5771ac25849b70abbbd6e62bb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 50
 --- !u!61 &583465648
@@ -1305,9 +1299,9 @@ GameObject:
   - component: {fileID: 772048471}
   - component: {fileID: 772048472}
   - component: {fileID: 772048473}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: yellow (20)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1391,7 +1385,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a639af5771ac25849b70abbbd6e62bb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 50
 --- !u!61 &772048473
@@ -1451,9 +1444,9 @@ GameObject:
   - component: {fileID: 843662984}
   - component: {fileID: 843662985}
   - component: {fileID: 843662986}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: yellow (16)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1537,7 +1530,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a639af5771ac25849b70abbbd6e62bb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 50
 --- !u!61 &843662986
@@ -1597,9 +1589,9 @@ GameObject:
   - component: {fileID: 947210741}
   - component: {fileID: 947210742}
   - component: {fileID: 947210743}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: yellow (17)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1683,7 +1675,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a639af5771ac25849b70abbbd6e62bb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 50
 --- !u!61 &947210743
@@ -1743,9 +1734,9 @@ GameObject:
   - component: {fileID: 1094281394}
   - component: {fileID: 1094281395}
   - component: {fileID: 1094281396}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: yellow (22)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1829,7 +1820,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a639af5771ac25849b70abbbd6e62bb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 50
 --- !u!61 &1094281396
@@ -1889,9 +1879,9 @@ GameObject:
   - component: {fileID: 1236582818}
   - component: {fileID: 1236582820}
   - component: {fileID: 1236582821}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: yellow
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1975,7 +1965,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a639af5771ac25849b70abbbd6e62bb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 50
 --- !u!61 &1236582821
@@ -2035,9 +2024,9 @@ GameObject:
   - component: {fileID: 1303504467}
   - component: {fileID: 1303504468}
   - component: {fileID: 1303504469}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: yellow (26)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2121,7 +2110,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a639af5771ac25849b70abbbd6e62bb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 50
 --- !u!61 &1303504469
@@ -2181,9 +2169,9 @@ GameObject:
   - component: {fileID: 1393758071}
   - component: {fileID: 1393758072}
   - component: {fileID: 1393758073}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: yellow (5)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2267,7 +2255,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a639af5771ac25849b70abbbd6e62bb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 50
 --- !u!61 &1393758073
@@ -2327,9 +2314,9 @@ GameObject:
   - component: {fileID: 1404847366}
   - component: {fileID: 1404847367}
   - component: {fileID: 1404847368}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: yellow (11)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2413,7 +2400,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a639af5771ac25849b70abbbd6e62bb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 50
 --- !u!61 &1404847368
@@ -2473,9 +2459,9 @@ GameObject:
   - component: {fileID: 1425755887}
   - component: {fileID: 1425755888}
   - component: {fileID: 1425755889}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: yellow (8)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2559,7 +2545,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a639af5771ac25849b70abbbd6e62bb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 50
 --- !u!61 &1425755889
@@ -2619,9 +2604,9 @@ GameObject:
   - component: {fileID: 1458230767}
   - component: {fileID: 1458230768}
   - component: {fileID: 1458230769}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: yellow (3)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2705,7 +2690,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a639af5771ac25849b70abbbd6e62bb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 50
 --- !u!61 &1458230769
@@ -2765,9 +2749,9 @@ GameObject:
   - component: {fileID: 1494446709}
   - component: {fileID: 1494446710}
   - component: {fileID: 1494446711}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: yellow (24)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2851,7 +2835,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a639af5771ac25849b70abbbd6e62bb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 50
 --- !u!61 &1494446711
@@ -2911,9 +2894,9 @@ GameObject:
   - component: {fileID: 1569832926}
   - component: {fileID: 1569832927}
   - component: {fileID: 1569832928}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: yellow (4)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2997,7 +2980,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a639af5771ac25849b70abbbd6e62bb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 50
 --- !u!61 &1569832928
@@ -3115,9 +3097,9 @@ GameObject:
   - component: {fileID: 1667389452}
   - component: {fileID: 1667389453}
   - component: {fileID: 1667389454}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: yellow (18)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3201,7 +3183,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a639af5771ac25849b70abbbd6e62bb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 50
 --- !u!61 &1667389454
@@ -3261,9 +3242,9 @@ GameObject:
   - component: {fileID: 1726433754}
   - component: {fileID: 1726433755}
   - component: {fileID: 1726433756}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: yellow (12)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3347,7 +3328,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a639af5771ac25849b70abbbd6e62bb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 50
 --- !u!61 &1726433756
@@ -3407,9 +3387,9 @@ GameObject:
   - component: {fileID: 1762967922}
   - component: {fileID: 1762967923}
   - component: {fileID: 1762967924}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: yellow (19)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3493,7 +3473,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a639af5771ac25849b70abbbd6e62bb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 50
 --- !u!61 &1762967924
@@ -3553,9 +3532,9 @@ GameObject:
   - component: {fileID: 1776629828}
   - component: {fileID: 1776629829}
   - component: {fileID: 1776629830}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: yellow (2)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3639,7 +3618,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a639af5771ac25849b70abbbd6e62bb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 50
 --- !u!61 &1776629830
@@ -3699,9 +3677,9 @@ GameObject:
   - component: {fileID: 1811681668}
   - component: {fileID: 1811681669}
   - component: {fileID: 1811681670}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: yellow (7)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3785,7 +3763,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a639af5771ac25849b70abbbd6e62bb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 50
 --- !u!61 &1811681670
@@ -3845,9 +3822,9 @@ GameObject:
   - component: {fileID: 1816588614}
   - component: {fileID: 1816588615}
   - component: {fileID: 1816588616}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: yellow (21)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3931,7 +3908,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a639af5771ac25849b70abbbd6e62bb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 50
 --- !u!61 &1816588616
@@ -3987,9 +3963,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1697995512115823136, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2434011250700454794, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
       propertyPath: m_Name
       value: PewPewPlayerPrefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 2434011250700454794, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3228121632548416632, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5631397534877533816, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4031,6 +4019,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6553406119551683513, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7134139267646115231, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4048,9 +4044,9 @@ GameObject:
   - component: {fileID: 1892282167}
   - component: {fileID: 1892282168}
   - component: {fileID: 1892282169}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: yellow (6)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4134,7 +4130,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a639af5771ac25849b70abbbd6e62bb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 50
 --- !u!61 &1892282169
@@ -4194,9 +4189,9 @@ GameObject:
   - component: {fileID: 2076889858}
   - component: {fileID: 2076889859}
   - component: {fileID: 2076889860}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: yellow (25)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4280,7 +4275,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a639af5771ac25849b70abbbd6e62bb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 50
 --- !u!61 &2076889860
@@ -4340,9 +4334,9 @@ GameObject:
   - component: {fileID: 2107182848}
   - component: {fileID: 2107182849}
   - component: {fileID: 2107182850}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: yellow (15)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4426,7 +4420,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a639af5771ac25849b70abbbd6e62bb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 50
 --- !u!61 &2107182850

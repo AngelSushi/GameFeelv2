@@ -5,7 +5,7 @@ using UnityEngine;
 public class PewPewMunition : MonoBehaviour
 {
     [SerializeField] private float _speed = 2;
-
+    
     // Update is called once per frame
     void Update()
     {
@@ -22,6 +22,10 @@ public class PewPewMunition : MonoBehaviour
 
         if (collision != null && collision.gameObject.tag == "Enemy")
         {
+          /*  Debug.Log("size " + EnemyManager.Instance.enemies.Count);
+            EnemyManager.Instance.enemies.Remove(collision.gameObject.GetComponent<EnemyBehavior>());
+            Debug.Log("newSize " + EnemyManager.Instance.enemies.Count);
+            */
             Destroy(collision.gameObject);
             Destroy(gameObject);
         }
