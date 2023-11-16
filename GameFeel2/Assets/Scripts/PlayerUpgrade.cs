@@ -1,3 +1,4 @@
+using Sirenix.OdinInspector;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
@@ -21,16 +22,17 @@ public class PlayerUpgrade : MonoBehaviour
         setUpSpaceShip();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
+    [Button]
     public void setUpSpaceShip()
     {
+        Vector2 _pos = _spaceShips[level].transform.position;
+        level = level < 4 ? level++ : level;
         foreach (var ships in _spaceShips)
             ships.SetActive(false);
+
+        _spaceShips[level].transform.position = _spaceShips[level-1].transform.position;
         _spaceShips[level].SetActive(true);
+
     }
 }
