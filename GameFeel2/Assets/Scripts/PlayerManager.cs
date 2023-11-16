@@ -23,6 +23,7 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private GameObject _pewPewMunition;
     [SerializeField] private GameObject[] _pewPewPosisition;
     [SerializeField] private GameObject _pewPewParent;
+    [SerializeField] private MeshRenderer _pewPewPlayerRenderer;
 
     [Header("condition")]
     private bool _moveLeft = false;
@@ -102,5 +103,8 @@ public class PlayerManager : MonoBehaviour
         _canShoot = true;
     }
 
+    public void GetHit()
+    {
 
+    }
 }
