@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class EnemyManager : MonoBehaviour
 {
+    public int startEnemiesCount;
     public List<EnemyBehavior> enemies = new List<EnemyBehavior>();
 
     private static EnemyManager _instance;
@@ -33,6 +34,8 @@ public class EnemyManager : MonoBehaviour
         {
             _instance = this;
         }
+
+        startEnemiesCount = enemies.Count;
     }
 
     private void Update()
