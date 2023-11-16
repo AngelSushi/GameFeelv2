@@ -68,6 +68,7 @@ public class PewPewMunition : CoroutineSystem
         {
             Destroy(shootFXInstance);
             Debug.Log("player");
+            collision.GetComponent<PlayerManager>().GetHit();
             Destroy(gameObject);
         }
     }

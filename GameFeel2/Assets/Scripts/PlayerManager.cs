@@ -22,18 +22,19 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private float _speed = 1;
     [SerializeField] private float _shootCD = 1;
     [SerializeField] private Color _pewPewHitColor;
-    private bool _canMove;
-
+    
     [Header("Component")]
     [SerializeField] private GameObject _pewPewMunition;
     [SerializeField] private GameObject[] _pewPewPosisition;
     [SerializeField] private GameObject _pewPewParent;
     [SerializeField] private SpriteRenderer _pewPewPlayerRenderer;
+    [SerializeField] private ParticleSystem _hitParticule;
 
     [Header("condition")]
     private bool _moveLeft = false;
     private bool _moveRight = false;
     private bool _canShoot = true;
+    private bool _canMove = true;
 
     public GameObject shootFX;
     // Update is called once per frame
@@ -118,15 +119,17 @@ public class PlayerManager : MonoBehaviour
 
         _canMove = false;
 
+        if(_hitParticule != null)
+            _hitParticule.Play();
+
         Sequence mySequence = DOTween.Sequence();
-        mySequence.Append(_pewPewPlayerRenderer.DOColor(_pewPewHitColor, .5f));
-        mySequence.Append(_pewPewPlayerRenderer.DOColor(Color.white, .5f));
         mySequence.Append(_pewPewPlayerRenderer.DOColor(_pewPewHitColor, .5f));
         mySequence.Append(_pewPewPlayerRenderer.DOColor(Color.white, .5f));
 
         mySequence.Play();
         mySequence.OnComplete(() =>
         {
+            _canMove = true;
             if (_health == 0)
                 Destroy(gameObject);
         });
