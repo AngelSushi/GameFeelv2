@@ -225,8 +225,6 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
-  _pewPewMunition: {fileID: 4025783536268090546, guid: 025e3694c74adf343af2ffff0e086005, type: 3}
-  _shootCD: 1
 --- !u!61 &66622964
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -401,8 +399,6 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
-  _pewPewMunition: {fileID: 4025783536268090546, guid: 025e3694c74adf343af2ffff0e086005, type: 3}
-  _shootCD: 1
 --- !u!61 &110395704
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -531,6 +527,8 @@ MonoBehaviour:
   - {fileID: 1494446710}
   - {fileID: 2076889859}
   - {fileID: 1303504468}
+  _pewPewMunition: {fileID: 4025783536268090546, guid: 302a24afd9fb6c14fb3498b612331273, type: 3}
+  _shootCD: 1
 --- !u!4 &168173610
 Transform:
   m_ObjectHideFlags: 0
@@ -648,8 +646,6 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
-  _pewPewMunition: {fileID: 4025783536268090546, guid: 025e3694c74adf343af2ffff0e086005, type: 3}
-  _shootCD: 1
 --- !u!61 &183864563
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -824,8 +820,6 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
-  _pewPewMunition: {fileID: 4025783536268090546, guid: 025e3694c74adf343af2ffff0e086005, type: 3}
-  _shootCD: 1
 --- !u!61 &206220115
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1000,8 +994,6 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
-  _pewPewMunition: {fileID: 4025783536268090546, guid: 025e3694c74adf343af2ffff0e086005, type: 3}
-  _shootCD: 1
 --- !u!61 &509755880
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1390,8 +1382,6 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
-  _pewPewMunition: {fileID: 4025783536268090546, guid: 025e3694c74adf343af2ffff0e086005, type: 3}
-  _shootCD: 1
 --- !u!61 &583465648
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1648,8 +1638,6 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
-  _pewPewMunition: {fileID: 4025783536268090546, guid: 025e3694c74adf343af2ffff0e086005, type: 3}
-  _shootCD: 1
 --- !u!61 &772048473
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1824,8 +1812,6 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
-  _pewPewMunition: {fileID: 4025783536268090546, guid: 025e3694c74adf343af2ffff0e086005, type: 3}
-  _shootCD: 1
 --- !u!61 &843662986
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2000,8 +1986,6 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
-  _pewPewMunition: {fileID: 4025783536268090546, guid: 025e3694c74adf343af2ffff0e086005, type: 3}
-  _shootCD: 1
 --- !u!61 &947210743
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2176,8 +2160,6 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
-  _pewPewMunition: {fileID: 4025783536268090546, guid: 025e3694c74adf343af2ffff0e086005, type: 3}
-  _shootCD: 1
 --- !u!61 &1236582821
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2352,8 +2334,6 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
-  _pewPewMunition: {fileID: 4025783536268090546, guid: 025e3694c74adf343af2ffff0e086005, type: 3}
-  _shootCD: 1
 --- !u!61 &1303504469
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2605,8 +2585,6 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
-  _pewPewMunition: {fileID: 4025783536268090546, guid: 025e3694c74adf343af2ffff0e086005, type: 3}
-  _shootCD: 1
 --- !u!61 &1393758073
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2781,8 +2759,6 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
-  _pewPewMunition: {fileID: 4025783536268090546, guid: 025e3694c74adf343af2ffff0e086005, type: 3}
-  _shootCD: 1
 --- !u!61 &1404847368
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2957,8 +2933,6 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
-  _pewPewMunition: {fileID: 4025783536268090546, guid: 025e3694c74adf343af2ffff0e086005, type: 3}
-  _shootCD: 1
 --- !u!61 &1425755889
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3133,8 +3107,6 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
-  _pewPewMunition: {fileID: 4025783536268090546, guid: 025e3694c74adf343af2ffff0e086005, type: 3}
-  _shootCD: 1
 --- !u!61 &1458230769
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3309,8 +3281,6 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
-  _pewPewMunition: {fileID: 4025783536268090546, guid: 025e3694c74adf343af2ffff0e086005, type: 3}
-  _shootCD: 1
 --- !u!61 &1494446711
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3485,8 +3455,6 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
-  _pewPewMunition: {fileID: 4025783536268090546, guid: 025e3694c74adf343af2ffff0e086005, type: 3}
-  _shootCD: 1
 --- !u!61 &1569832928
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3718,8 +3686,6 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
-  _pewPewMunition: {fileID: 4025783536268090546, guid: 025e3694c74adf343af2ffff0e086005, type: 3}
-  _shootCD: 1
 --- !u!61 &1667389454
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3894,8 +3860,6 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
-  _pewPewMunition: {fileID: 4025783536268090546, guid: 025e3694c74adf343af2ffff0e086005, type: 3}
-  _shootCD: 1
 --- !u!61 &1726433756
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4070,8 +4034,6 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
-  _pewPewMunition: {fileID: 4025783536268090546, guid: 025e3694c74adf343af2ffff0e086005, type: 3}
-  _shootCD: 1
 --- !u!61 &1762967924
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4246,8 +4208,6 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
-  _pewPewMunition: {fileID: 4025783536268090546, guid: 025e3694c74adf343af2ffff0e086005, type: 3}
-  _shootCD: 1
 --- !u!61 &1776629830
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4422,8 +4382,6 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
-  _pewPewMunition: {fileID: 4025783536268090546, guid: 025e3694c74adf343af2ffff0e086005, type: 3}
-  _shootCD: 1
 --- !u!61 &1811681670
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4598,8 +4556,6 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
-  _pewPewMunition: {fileID: 4025783536268090546, guid: 025e3694c74adf343af2ffff0e086005, type: 3}
-  _shootCD: 1
 --- !u!61 &1816588616
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4680,29 +4636,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1697995512115823136, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
-      propertyPath: m_Layer
+    - target: {fileID: 1276754647667277860, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2135474497851662622, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2434011250700454794, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
       propertyPath: m_Name
       value: PewPewPlayerPrefab
       objectReference: {fileID: 0}
-    - target: {fileID: 2434011250700454794, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
-      propertyPath: m_Layer
+    - target: {fileID: 3228121632548416632, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3228121632548416632, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
-      propertyPath: m_Layer
-      value: 7
+    - target: {fileID: 3887964857812247137, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5631397534877533816, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.803066
+      value: 0.28
       objectReference: {fileID: 0}
     - target: {fileID: 5631397534877533816, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.7481244
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 5631397534877533816, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4735,30 +4695,6 @@ PrefabInstance:
     - target: {fileID: 5631397534877533816, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6553406119551683513, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7134139267646115231, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9166352950877001133, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
-      propertyPath: m_Size.x
-      value: 10.96476
-      objectReference: {fileID: 0}
-    - target: {fileID: 9166352950877001133, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
-      propertyPath: m_Size.y
-      value: 12.902088
-      objectReference: {fileID: 0}
-    - target: {fileID: 9166352950877001133, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.06849003
-      objectReference: {fileID: 0}
-    - target: {fileID: 9166352950877001133, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.18264198
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4867,8 +4803,6 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
-  _pewPewMunition: {fileID: 4025783536268090546, guid: 025e3694c74adf343af2ffff0e086005, type: 3}
-  _shootCD: 1
 --- !u!61 &1892282169
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5043,8 +4977,6 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
-  _pewPewMunition: {fileID: 4025783536268090546, guid: 025e3694c74adf343af2ffff0e086005, type: 3}
-  _shootCD: 1
 --- !u!61 &2076889860
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5219,8 +5151,6 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
-  _pewPewMunition: {fileID: 4025783536268090546, guid: 025e3694c74adf343af2ffff0e086005, type: 3}
-  _shootCD: 1
 --- !u!61 &2107182850
 BoxCollider2D:
   m_ObjectHideFlags: 0

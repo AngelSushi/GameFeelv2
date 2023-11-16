@@ -11,9 +11,8 @@ public class PlayerManager : MonoBehaviour
 
     [Header("Component")]
     [SerializeField] private GameObject _pewPewMunition;
-    [SerializeField] private GameObject _pewPewPosisition;
+    [SerializeField] private GameObject[] _pewPewPosisition;
     [SerializeField] private GameObject _pewPewParent;
-    [SerializeField] private PlayerUpgrade PU;
 
     [Header("condition")]
     private bool _moveLeft = false;
@@ -62,7 +61,10 @@ public class PlayerManager : MonoBehaviour
     {
         if(context.started && _canShoot) 
         {
-            GameObject _pew = Instantiate(_pewPewMunition, _pewPewPosisition.transform.position, Quaternion.identity, _pewPewParent.transform);
+            foreach(GameObject _pewPewPos in _pewPewPosisition)
+            {
+                GameObject _pew = Instantiate(_pewPewMunition, _pewPewPos.transform.position, Quaternion.identity, _pewPewParent.transform);
+            }
             StartCoroutine(ShootCD());
         }
     }

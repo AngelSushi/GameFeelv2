@@ -23,14 +23,6 @@ public class EnemyBehavior : MonoBehaviour
 
     private int sign = 1;
     
-    
-    [Header("Component")]
-    [SerializeField] private GameObject _pewPewMunition;
-    
-    
-    [SerializeField] private float _shootCD = 1;
-
-    private bool _canShoot = true;
     private void Start()
     {
         StartCoroutine(Moove());
@@ -41,26 +33,6 @@ public class EnemyBehavior : MonoBehaviour
         
         
         Debug.DrawLine(transform.position+ Vector3.up * -1, (transform.position + Vector3.up * -1) + Vector3.up * -50,_debugLineColor);
-    }
-    public void Shoot()
-    {
-
-        if (!_canShoot)
-        {
-            return;
-        }
-        
-        GameObject _pew = Instantiate(_pewPewMunition, transform.position + Vector3.up * -1, Quaternion.identity);
-        _pew.GetComponent<PewPewMunition>().sender = this;
-        StartCoroutine(ShootCD());
-        
-    }
-
-    IEnumerator ShootCD()
-    {
-        _canShoot = true;
-        yield return new WaitForSeconds(_shootCD);
-        _canShoot = false;
     }
     
 
