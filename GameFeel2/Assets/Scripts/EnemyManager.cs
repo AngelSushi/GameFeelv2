@@ -30,7 +30,7 @@ public class EnemyManager : MonoBehaviour
 
     public GameObject enemiesParent;
     
-    private bool _canShoot = true;
+    private bool _canShoot = false;
 
     public GameObject shootFX;
 
@@ -42,8 +42,15 @@ public class EnemyManager : MonoBehaviour
         }
 
         GenerateEnemies();
-        
         startEnemiesCount = enemies.Count;
+
+        StartCoroutine(SafeShoot());
+    }
+
+    private IEnumerator SafeShoot()
+    {
+        yield return new WaitForSeconds(2f);
+        _canShoot = true;
     }
 
     private void Update()
@@ -96,10 +103,11 @@ public class EnemyManager : MonoBehaviour
                 GameObject enemyInstance = Instantiate(enemyPrefab[random]);
                 enemyInstance.transform.parent = enemiesParent.transform;
 
-                startEnemyPos += Vector2.right * j;
-                startEnemyPos += Vector2.up * -1 * i;
+                Vector2 enemyPos = startEnemyPos;
+                enemyPos += Vector2.right * j;
+                enemyPos += Vector2.up * -1 * i;
 
-                enemyInstance.transform.position = startEnemyPos;
+                enemyInstance.transform.position = enemyPos;
                 
                 enemyInstance.GetComponent<EnemyBehavior>().manager = this;
                 enemies.Add(enemyInstance.GetComponent<EnemyBehavior>());
