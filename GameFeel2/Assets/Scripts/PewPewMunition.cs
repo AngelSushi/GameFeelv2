@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PewPewMunition : MonoBehaviour
+public class PewPewMunition : CoroutineSystem
 {
     [SerializeField] private float _speed = 2;
 
@@ -30,10 +30,23 @@ public class PewPewMunition : MonoBehaviour
         if (collision != null && collision.gameObject.tag == "Enemy" && sender == null)
         {
             Debug.Log("enemy");
-            EnemyManager.Instance.enemies.Remove(collision.gameObject.GetComponent<EnemyBehavior>());
             PlayerManager.Instance.shootFX.GetComponent<ParticleSystem>().Stop();
             PlayerManager.Instance.shootFX.SetActive(false);
+
+            EnemyManager.Instance.enemies.Remove(collision.gameObject.GetComponent<EnemyBehavior>());
             Destroy(collision.gameObject);
+            
+            //GameObject deathFXInstance = Instantiate(collision.gameObject.GetComponent<EnemyBehavior>().deathFX,collision.gameObject.transform.position,Quaternion.identity);
+            //deathFXInstance.SetActive(true);
+            //deathFXInstance.GetComponent<ParticleSystem>().Play();
+
+           /* RunDelayed(1f, () =>
+            {
+                EnemyManager.Instance.enemies.Remove(collision.gameObject.GetComponent<EnemyBehavior>());
+                Destroy(collision.gameObject);
+            });
+            */
+            
             Destroy(gameObject);
         }
 

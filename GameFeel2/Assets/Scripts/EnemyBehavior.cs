@@ -19,30 +19,41 @@ public class EnemyBehavior : MonoBehaviour
 
     [SerializeField] private float speed;
 
-    private Color _debugLineColor;
+    public GameObject deathFX;
 
     private int sign = 1;
+
+    private float _originSpeed;
+
+    public float amplifier;
     
     private void Start()
     {
         StartCoroutine(Moove());
+        _originSpeed = speed;
     }
 
-    private void Update()
-    {
-        
-        
-        Debug.DrawLine(transform.position+ Vector3.up * -1, (transform.position + Vector3.up * -1) + Vector3.up * -50,_debugLineColor);
-    }
     
 
 
     private IEnumerator Moove()
     {
-        yield return new WaitForSeconds(1f);
-        
+        yield return new WaitForSeconds(speed);
 
-        transform.Translate(direction * speed );
+
+        float factor = manager.enemies.Count / (float)manager.startEnemiesCount;
+        speed = _originSpeed - ((1 - factor));
+        speed = Mathf.Clamp(speed, 0.1f, _originSpeed);
+        
+        transform.Translate(direction  );
+
+
+        
+        // SI Aucun ennemi tué ==> speed = originSpeed;
+        /*
+         * Si tout les enemis tués = speed = originalSpeed + originalSpeed * amplifier
+         * 
+         */
 
         direction = new Vector2(sign, 0);
 
