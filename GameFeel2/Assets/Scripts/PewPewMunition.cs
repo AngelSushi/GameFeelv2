@@ -6,6 +6,8 @@ public class PewPewMunition : MonoBehaviour
 {
     [SerializeField] private float _speed = 2;
 
+    public EnemyBehavior sender;
+    
     // Update is called once per frame
     void Update()
     {
@@ -17,17 +19,27 @@ public class PewPewMunition : MonoBehaviour
         // Fuck les Interface go back to monkey
         if (collision != null && collision.gameObject.tag == "PewPewKillZone")
         {
+            Debug.Log("kill zone");
             Destroy(gameObject);
         }
 
-        if (collision != null && collision.gameObject.tag == "Enemy")
+        if (collision != null && collision.gameObject.tag == "Enemy" && sender == null)
         {
+            Debug.Log("enemy");
+            EnemyManager.Instance.enemies.Remove(collision.gameObject.GetComponent<EnemyBehavior>());
             Destroy(collision.gameObject);
             Destroy(gameObject);
         }
 
-        if (collision != null && collision.gameObject.tag == "PewPew")
+        if (collision != null && ((collision.gameObject.tag == "PewPew" && transform.tag == "PewPewEnemy") || (transform.tag == "PewPew" && collision.gameObject.tag == "PewPewEnemy")))
         {
+            Debug.Log("pewpew");
+            Destroy(gameObject);
+        }
+        
+        if (collision != null && collision.gameObject.tag == "Player")
+        {
+            Debug.Log("player");
             Destroy(gameObject);
         }
     }
