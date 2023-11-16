@@ -1,3 +1,5 @@
+using DG.Tweening;
+using Sirenix.OdinInspector;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,12 +10,13 @@ public class PlayerManager : MonoBehaviour
     [Header("Stats")]
     [SerializeField] private float _speed = 1;
     [SerializeField] private float _shootCD = 1;
+    [SerializeField] private Color _pewPewHitColor;
 
     [Header("Component")]
     [SerializeField] private GameObject _pewPewMunition;
     [SerializeField] private GameObject[] _pewPewPosisition;
     [SerializeField] private GameObject _pewPewParent;
-    [SerializeField] private MeshRenderer _pewPewPlayerRenderer;
+    [SerializeField] private SpriteRenderer _pewPewPlayerRenderer;
 
     [Header("condition")]
     private bool _moveLeft = false;
@@ -79,8 +82,15 @@ public class PlayerManager : MonoBehaviour
         _canShoot = true;
     }
 
+    [Button]
     public void GetHit()
     {
+        Sequence mySequence = DOTween.Sequence();
+        mySequence.Append(_pewPewPlayerRenderer.DOColor(_pewPewHitColor, .5f));
+        mySequence.Append(_pewPewPlayerRenderer.DOColor(Color.white, .5f));
+        mySequence.Append(_pewPewPlayerRenderer.DOColor(_pewPewHitColor, .5f));
+        mySequence.Append(_pewPewPlayerRenderer.DOColor(Color.white, .5f));
 
+        mySequence.Play();
     }
 }
