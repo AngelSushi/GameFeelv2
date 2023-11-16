@@ -65,7 +65,7 @@ public class PlayerManager : MonoBehaviour
         {
             foreach(GameObject _pewPewPos in _pewPewPosisition)
             {
-                GameObject _pew = Instantiate(_pewPewMunition, _pewPewPos.transform.position, Quaternion.identity, _pewPewParent.transform);
+                GameObject _pew = Instantiate(_pewPewMunition, _pewPewPos.transform.position + Vector3.up, Quaternion.identity, _pewPewParent.transform);
             }
             StartCoroutine(ShootCD());
         }
