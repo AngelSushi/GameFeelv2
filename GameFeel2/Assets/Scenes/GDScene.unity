@@ -225,6 +225,8 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
+  deathFX: {fileID: 0}
+  amplifier: 0
 --- !u!61 &66622964
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -399,6 +401,8 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
+  deathFX: {fileID: 0}
+  amplifier: 0
 --- !u!61 &110395704
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -500,6 +504,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a882c26a8b473846bf4821f8d6e355d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startEnemiesCount: 0
   enemies:
   - {fileID: 1236582820}
   - {fileID: 0}
@@ -647,6 +652,8 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
+  deathFX: {fileID: 0}
+  amplifier: 0
 --- !u!61 &183864563
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -826,6 +833,8 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
+  deathFX: {fileID: 0}
+  amplifier: 0
 --- !u!61 &206220115
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1002,7 +1011,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 359148899}
   serializedVersion: 8
-  lengthInSec: 1
+  lengthInSec: 2
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -1130,7 +1139,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 30
+      scalar: 20
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -1248,7 +1257,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0.8
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -5892,6 +5901,8 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
+  deathFX: {fileID: 0}
+  amplifier: 0
 --- !u!61 &509755880
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11249,6 +11260,8 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
+  deathFX: {fileID: 0}
+  amplifier: 0
 --- !u!61 &772048473
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11423,6 +11436,8 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
+  deathFX: {fileID: 0}
+  amplifier: 0
 --- !u!61 &843662986
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11597,6 +11612,8 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
+  deathFX: {fileID: 0}
+  amplifier: 0
 --- !u!61 &947210743
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11776,6 +11793,8 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
+  deathFX: {fileID: 0}
+  amplifier: 0
 --- !u!61 &1236582821
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11955,6 +11974,8 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
+  deathFX: {fileID: 0}
+  amplifier: 0
 --- !u!61 &1303504469
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12211,6 +12232,8 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
+  deathFX: {fileID: 0}
+  amplifier: 0
 --- !u!61 &1393758073
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12385,6 +12408,8 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
+  deathFX: {fileID: 0}
+  amplifier: 0
 --- !u!61 &1404847368
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12559,6 +12584,8 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
+  deathFX: {fileID: 0}
+  amplifier: 0
 --- !u!61 &1425755889
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12733,6 +12760,8 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
+  deathFX: {fileID: 0}
+  amplifier: 0
 --- !u!61 &1458230769
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12907,6 +12936,8 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
+  deathFX: {fileID: 0}
+  amplifier: 0
 --- !u!61 &1494446711
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13081,6 +13112,8 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
+  deathFX: {fileID: 0}
+  amplifier: 0
 --- !u!61 &1569832928
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13311,6 +13344,8 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
+  deathFX: {fileID: 0}
+  amplifier: 0
 --- !u!61 &1667389454
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13490,6 +13525,8 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
+  deathFX: {fileID: 0}
+  amplifier: 0
 --- !u!61 &1726433756
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13664,6 +13701,8 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
+  deathFX: {fileID: 0}
+  amplifier: 0
 --- !u!61 &1762967924
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13843,6 +13882,8 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
+  deathFX: {fileID: 0}
+  amplifier: 0
 --- !u!61 &1776629830
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14017,6 +14058,8 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
+  deathFX: {fileID: 0}
+  amplifier: 0
 --- !u!61 &1811681670
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14191,6 +14234,8 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
+  deathFX: {fileID: 0}
+  amplifier: 0
 --- !u!61 &1816588616
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14494,6 +14539,8 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
+  deathFX: {fileID: 0}
+  amplifier: 0
 --- !u!61 &1892282169
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14752,6 +14799,8 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
+  deathFX: {fileID: 0}
+  amplifier: 0
 --- !u!61 &2076889860
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14926,6 +14975,8 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
+  deathFX: {fileID: 0}
+  amplifier: 0
 --- !u!61 &2107182850
 BoxCollider2D:
   m_ObjectHideFlags: 0
