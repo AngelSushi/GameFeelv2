@@ -718,6 +718,11 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!1 &186434140 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6553406119551683513, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+  m_PrefabInstance: {fileID: 1833748406}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &206220111
 GameObject:
   m_ObjectHideFlags: 0
@@ -892,6 +897,11 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!1 &289111446 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7754157442558592735, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+  m_PrefabInstance: {fileID: 1833748406}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &509755876
 GameObject:
   m_ObjectHideFlags: 0
@@ -2058,6 +2068,11 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!1 &1183842628 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6090038443039795576, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+  m_PrefabInstance: {fileID: 1833748406}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1236582817
 GameObject:
   m_ObjectHideFlags: 0
@@ -2232,6 +2247,11 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!1 &1265992694 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4884757229500843424, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+  m_PrefabInstance: {fileID: 1833748406}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1303504465
 GameObject:
   m_ObjectHideFlags: 0
@@ -2406,6 +2426,11 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!1 &1316516354 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7460501094917679077, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+  m_PrefabInstance: {fileID: 1833748406}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1329455246
 GameObject:
   m_ObjectHideFlags: 0
@@ -3758,6 +3783,11 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!1 &1679389715 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2162958750322412076, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+  m_PrefabInstance: {fileID: 1833748406}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1726433752
 GameObject:
   m_ObjectHideFlags: 0
@@ -4106,6 +4136,11 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!1 &1770408331 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3405033433781645989, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+  m_PrefabInstance: {fileID: 1833748406}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1776629826
 GameObject:
   m_ObjectHideFlags: 0
@@ -4654,8 +4689,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3887964857812247137, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5280389791824062546, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+      propertyPath: _pewPewPosisition.Array.data[0]
+      value: 
+      objectReference: {fileID: 186434140}
     - target: {fileID: 5631397534877533816, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.28
@@ -4696,6 +4735,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5800621463217186379, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+      propertyPath: _pewPewPosisition.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5800621463217186379, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+      propertyPath: _pewPewPosisition.Array.data[0]
+      value: 
+      objectReference: {fileID: 1265992694}
+    - target: {fileID: 5800621463217186379, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+      propertyPath: _pewPewPosisition.Array.data[1]
+      value: 
+      objectReference: {fileID: 1183842628}
+    - target: {fileID: 5800621463217186379, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+      propertyPath: _pewPewPosisition.Array.data[2]
+      value: 
+      objectReference: {fileID: 1770408331}
+    - target: {fileID: 6676885973796108868, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+      propertyPath: level
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8375798770620777486, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+      propertyPath: _pewPewPosisition.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8375798770620777486, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+      propertyPath: _pewPewPosisition.Array.data[0]
+      value: 
+      objectReference: {fileID: 1316516354}
+    - target: {fileID: 8375798770620777486, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+      propertyPath: _pewPewPosisition.Array.data[1]
+      value: 
+      objectReference: {fileID: 1679389715}
+    - target: {fileID: 8658622944480748852, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+      propertyPath: _pewPewPosisition.Array.data[0]
+      value: 
+      objectReference: {fileID: 289111446}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
