@@ -18,7 +18,7 @@ public class PlayerManager : MonoBehaviour
     }
     
     [Header("Stats")]
-    [SerializeField] private int _health = 3;
+    [SerializeField] private int _health = 6;
     [SerializeField] private float _speed = 1;
     [SerializeField] private float _shootCD = 1;
     [SerializeField] private Color _pewPewHitColor;
