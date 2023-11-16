@@ -3,12 +3,16 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using Random = System.Random;
 
-public class EnemyManager : MonoBehaviour
+public class EnemyManager : CoroutineSystem
 {
     public int startEnemiesCount;
     public List<EnemyBehavior> enemies = new List<EnemyBehavior>();
 
+    public List<GameObject> enemyPrefab = new List<GameObject>();
+    public Vector2 enemyWaveSize;
+    public Vector2 startEnemyPos;
     private static EnemyManager _instance;
 
     public static EnemyManager Instance
@@ -24,9 +28,14 @@ public class EnemyManager : MonoBehaviour
     
     [SerializeField] private float _shootCD = 1;
 
-    private bool _canShoot = true;
+    public GameObject enemiesParent;
+    
+    private bool _canShoot = false;
 
     public GameObject shootFX;
+
+    public AudioSource impact;
+    public AudioSource electricity;
 
     private void Awake()
     {
@@ -35,7 +44,16 @@ public class EnemyManager : MonoBehaviour
             _instance = this;
         }
 
+        GenerateEnemies();
         startEnemiesCount = enemies.Count;
+
+        StartCoroutine(SafeShoot());
+    }
+
+    private IEnumerator SafeShoot()
+    {
+        yield return new WaitForSeconds(2f);
+        _canShoot = true;
     }
 
     private void Update()
@@ -49,6 +67,8 @@ public class EnemyManager : MonoBehaviour
                 Shoot(enemy);
             }
         }
+        
+        electricity.gameObject.SetActive(enemies.Count == 1);
     }
     
     public void Shoot(EnemyBehavior enemy)
@@ -61,12 +81,12 @@ public class EnemyManager : MonoBehaviour
         GameObject _pew = Instantiate(_pewPewMunition, enemy.transform.position + Vector3.up * -1, Quaternion.identity);
         _pew.GetComponent<PewPewMunition>().sender = enemy;
 
-        GameObject shootFXInstance = Instantiate(shootFX, _pew.transform.position, Quaternion.Euler(90,0,0));
-        shootFXInstance.SetActive(true);
-        shootFXInstance.GetComponent<ParticleSystem>().Play();
+//        GameObject shootFXInstance = Instantiate(shootFX, _pew.transform.position, Quaternion.Euler(90,0,0));
+  //      shootFXInstance.SetActive(true);
+     //   shootFXInstance.GetComponent<ParticleSystem>().Play();
         
 
-        _pew.GetComponent<PewPewMunition>().shootFXInstance = shootFXInstance;
+        //_pew.GetComponent<PewPewMunition>().shootFXInstance = shootFXInstance;
         StartCoroutine(ShootCD());
         
     }
@@ -76,6 +96,45 @@ public class EnemyManager : MonoBehaviour
         _canShoot = false;
         yield return new WaitForSeconds(_shootCD);
         _canShoot = true;
+    }
+
+    public void WaitExplosion(GameObject enemy)
+    {
+        RunDelayed(0.3f, () =>
+        {
+
+            Debug.Log("destroyed");
+                
+            enemies.Remove(enemy.GetComponent<EnemyBehavior>());
+            Destroy(enemy);
+                
+            if (enemies.Count == 0)
+            {
+               GenerateEnemies();
+            }
+        });
+    }
+    
+    public void GenerateEnemies()
+    {
+        for (int i = 0; i < enemyWaveSize.y; i++)
+        {
+            for (int j = 0; j < enemyWaveSize.x; j++)
+            {
+                int random = UnityEngine.Random.Range(0, enemyPrefab.Count);
+                GameObject enemyInstance = Instantiate(enemyPrefab[random]);
+                enemyInstance.transform.parent = enemiesParent.transform;
+
+                Vector2 enemyPos = startEnemyPos;
+                enemyPos += Vector2.right * j;
+                enemyPos += Vector2.up * -1 * i;
+
+                enemyInstance.transform.position = enemyPos;
+                
+                enemyInstance.GetComponent<EnemyBehavior>().manager = this;
+                enemies.Add(enemyInstance.GetComponent<EnemyBehavior>());
+            }
+        }
     }
 
     public List<EnemyBehavior> FindBoundsMaxEnemies()
