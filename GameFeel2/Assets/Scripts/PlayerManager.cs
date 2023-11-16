@@ -23,7 +23,6 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private float _shootCD = 1;
     [SerializeField] private Color _pewPewHitColor;
     private bool _canMove;
-    [SerializeField] private Color _pewPewHitColor;
 
     [Header("Component")]
     [SerializeField] private GameObject _pewPewMunition;
