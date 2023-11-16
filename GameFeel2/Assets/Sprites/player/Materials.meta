@@ -1,14 +1,8 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:GameFeel2/Assets/Scenes/crashtest_Profiles/Main Camera Profile 2.asset.meta
-guid: 380dcc4932ca68240acdbc4475c2c5ba
-NativeFormatImporter:
-========
 guid: 8fee49e0440635a4eb4ff02dbddbbc68
 folderAsset: yes
 DefaultImporter:
->>>>>>>> main:GameFeel2/Assets/Sprites/player/Materials.meta
   externalObjects: {}
-  mainObjectFileID: 11400000
   userData: 
   assetBundleName: 
   assetBundleVariant: 

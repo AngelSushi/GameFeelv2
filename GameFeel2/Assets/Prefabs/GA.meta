@@ -1,14 +1,8 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:GameFeel2/Assets/Sprites/PP_Volume.asset.meta
-guid: 601a8e7c882d41f499df8aece836c97e
-NativeFormatImporter:
-========
 guid: 3419871911c57ea4185cc71f30218466
 folderAsset: yes
 DefaultImporter:
->>>>>>>> main:GameFeel2/Assets/Prefabs/GA.meta
   externalObjects: {}
-  mainObjectFileID: 11400000
   userData: 
   assetBundleName: 
   assetBundleVariant: 
