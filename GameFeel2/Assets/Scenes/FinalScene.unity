@@ -198,7 +198,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 68e7c2a75dcf9f849ad56a5043aff467, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -225,6 +225,8 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
+  deathFX: {fileID: 4160517964587276122, guid: 3479018668d7e9a4d9a360ee93f70828, type: 3}
+  amplifier: 10
 --- !u!61 &66622964
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -254,7 +256,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -372,7 +374,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 68e7c2a75dcf9f849ad56a5043aff467, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -399,6 +401,8 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
+  deathFX: {fileID: 4160517964587276122, guid: 3479018668d7e9a4d9a360ee93f70828, type: 3}
+  amplifier: 10
 --- !u!61 &110395704
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -428,7 +432,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -500,6 +504,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a882c26a8b473846bf4821f8d6e355d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startEnemiesCount: 0
   enemies:
   - {fileID: 1236582820}
   - {fileID: 583465647}
@@ -620,7 +625,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 68e7c2a75dcf9f849ad56a5043aff467, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -647,6 +652,8 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
+  deathFX: {fileID: 4160517964587276122, guid: 3479018668d7e9a4d9a360ee93f70828, type: 3}
+  amplifier: 10
 --- !u!61 &183864563
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -676,7 +683,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -799,7 +806,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 68e7c2a75dcf9f849ad56a5043aff467, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -826,6 +833,8 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
+  deathFX: {fileID: 4160517964587276122, guid: 3479018668d7e9a4d9a360ee93f70828, type: 3}
+  amplifier: 10
 --- !u!61 &206220115
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -855,7 +864,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -5865,7 +5874,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 68e7c2a75dcf9f849ad56a5043aff467, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5892,6 +5901,8 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
+  deathFX: {fileID: 4160517964587276122, guid: 3479018668d7e9a4d9a360ee93f70828, type: 3}
+  amplifier: 10
 --- !u!61 &509755880
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5921,7 +5932,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -6150,7 +6161,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.17746067, y: -3.2107067}
+  m_Offset: {x: 5.9837904, y: -3.2107067}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -6161,7 +6172,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.64507866, y: 10.009636}
+  m_Size: {x: 12.257738, y: 10.009636}
   m_EdgeRadius: 0
 --- !u!4 &558624632
 Transform:
@@ -6253,7 +6264,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 68e7c2a75dcf9f849ad56a5043aff467, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -6280,6 +6291,8 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
+  deathFX: {fileID: 4160517964587276122, guid: 3479018668d7e9a4d9a360ee93f70828, type: 3}
+  amplifier: 10
 --- !u!61 &583465648
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6309,7 +6322,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -11396,7 +11409,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 68e7c2a75dcf9f849ad56a5043aff467, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -11423,6 +11436,8 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
+  deathFX: {fileID: 4160517964587276122, guid: 3479018668d7e9a4d9a360ee93f70828, type: 3}
+  amplifier: 10
 --- !u!61 &772048473
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11452,7 +11467,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -11570,7 +11585,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 68e7c2a75dcf9f849ad56a5043aff467, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -11597,6 +11612,8 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
+  deathFX: {fileID: 4160517964587276122, guid: 3479018668d7e9a4d9a360ee93f70828, type: 3}
+  amplifier: 10
 --- !u!61 &843662986
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11626,7 +11643,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -11744,7 +11761,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 68e7c2a75dcf9f849ad56a5043aff467, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -11771,6 +11788,8 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
+  deathFX: {fileID: 4160517964587276122, guid: 3479018668d7e9a4d9a360ee93f70828, type: 3}
+  amplifier: 10
 --- !u!61 &947210743
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11800,7 +11819,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -11908,7 +11927,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 68e7c2a75dcf9f849ad56a5043aff467, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -11950,6 +11969,8 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
+  deathFX: {fileID: 4160517964587276122, guid: 3479018668d7e9a4d9a360ee93f70828, type: 3}
+  amplifier: 10
 --- !u!61 &1236582821
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11979,7 +12000,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -12102,7 +12123,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 68e7c2a75dcf9f849ad56a5043aff467, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -12129,6 +12150,8 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
+  deathFX: {fileID: 4160517964587276122, guid: 3479018668d7e9a4d9a360ee93f70828, type: 3}
+  amplifier: 10
 --- !u!61 &1303504469
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12158,7 +12181,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -12255,7 +12278,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.17746067, y: -3.2107067}
+  m_Offset: {x: -6.381542, y: -3.2107067}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -12266,7 +12289,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.64507866, y: 10.009636}
+  m_Size: {x: 13.763084, y: 10.009636}
   m_EdgeRadius: 0
 --- !u!4 &1329455248
 Transform:
@@ -12358,7 +12381,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 68e7c2a75dcf9f849ad56a5043aff467, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -12385,6 +12408,8 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
+  deathFX: {fileID: 4160517964587276122, guid: 3479018668d7e9a4d9a360ee93f70828, type: 3}
+  amplifier: 10
 --- !u!61 &1393758073
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12414,7 +12439,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -12532,7 +12557,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 68e7c2a75dcf9f849ad56a5043aff467, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -12559,6 +12584,8 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
+  deathFX: {fileID: 4160517964587276122, guid: 3479018668d7e9a4d9a360ee93f70828, type: 3}
+  amplifier: 10
 --- !u!61 &1404847368
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12588,7 +12615,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -12706,7 +12733,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 68e7c2a75dcf9f849ad56a5043aff467, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -12733,6 +12760,8 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
+  deathFX: {fileID: 4160517964587276122, guid: 3479018668d7e9a4d9a360ee93f70828, type: 3}
+  amplifier: 10
 --- !u!61 &1425755889
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12762,7 +12791,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -12880,7 +12909,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 68e7c2a75dcf9f849ad56a5043aff467, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -12907,6 +12936,8 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
+  deathFX: {fileID: 4160517964587276122, guid: 3479018668d7e9a4d9a360ee93f70828, type: 3}
+  amplifier: 10
 --- !u!61 &1458230769
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12936,7 +12967,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -13054,7 +13085,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 68e7c2a75dcf9f849ad56a5043aff467, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -13081,6 +13112,8 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
+  deathFX: {fileID: 4160517964587276122, guid: 3479018668d7e9a4d9a360ee93f70828, type: 3}
+  amplifier: 10
 --- !u!61 &1494446711
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13110,7 +13143,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -13228,7 +13261,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 68e7c2a75dcf9f849ad56a5043aff467, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -13255,6 +13288,8 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
+  deathFX: {fileID: 4160517964587276122, guid: 3479018668d7e9a4d9a360ee93f70828, type: 3}
+  amplifier: 10
 --- !u!61 &1569832928
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13284,7 +13319,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -13459,7 +13494,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 68e7c2a75dcf9f849ad56a5043aff467, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -13486,6 +13521,8 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
+  deathFX: {fileID: 4160517964587276122, guid: 3479018668d7e9a4d9a360ee93f70828, type: 3}
+  amplifier: 10
 --- !u!61 &1667389454
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13515,7 +13552,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -13638,7 +13675,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 68e7c2a75dcf9f849ad56a5043aff467, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -13665,6 +13702,8 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
+  deathFX: {fileID: 4160517964587276122, guid: 3479018668d7e9a4d9a360ee93f70828, type: 3}
+  amplifier: 10
 --- !u!61 &1726433756
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13694,7 +13733,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -13812,7 +13851,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 68e7c2a75dcf9f849ad56a5043aff467, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -13839,6 +13878,8 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
+  deathFX: {fileID: 4160517964587276122, guid: 3479018668d7e9a4d9a360ee93f70828, type: 3}
+  amplifier: 10
 --- !u!61 &1762967924
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13868,7 +13909,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -13991,7 +14032,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 68e7c2a75dcf9f849ad56a5043aff467, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -14018,6 +14059,8 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
+  deathFX: {fileID: 4160517964587276122, guid: 3479018668d7e9a4d9a360ee93f70828, type: 3}
+  amplifier: 10
 --- !u!61 &1776629830
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14047,7 +14090,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -14165,7 +14208,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 68e7c2a75dcf9f849ad56a5043aff467, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -14192,6 +14235,8 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
+  deathFX: {fileID: 4160517964587276122, guid: 3479018668d7e9a4d9a360ee93f70828, type: 3}
+  amplifier: 10
 --- !u!61 &1811681670
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14221,7 +14266,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -14339,7 +14384,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 68e7c2a75dcf9f849ad56a5043aff467, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -14366,6 +14411,8 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
+  deathFX: {fileID: 4160517964587276122, guid: 3479018668d7e9a4d9a360ee93f70828, type: 3}
+  amplifier: 10
 --- !u!61 &1816588616
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14395,7 +14442,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -14466,6 +14513,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4812621592300687115, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5280389791824062546, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
       propertyPath: shootFX
       value: 
@@ -14534,9 +14585,17 @@ PrefabInstance:
       propertyPath: _pewPewPosisition.Array.data[2]
       value: 
       objectReference: {fileID: 1770408331}
+    - target: {fileID: 6625244906092855570, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6676885973796108868, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
       propertyPath: level
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8333894541939753581, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8375798770620777486, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
       propertyPath: shootFX
@@ -14562,6 +14621,10 @@ PrefabInstance:
       propertyPath: _pewPewPosisition.Array.data[0]
       value: 
       objectReference: {fileID: 289111446}
+    - target: {fileID: 9201623447333102423, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14642,7 +14705,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 68e7c2a75dcf9f849ad56a5043aff467, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -14669,6 +14732,8 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
+  deathFX: {fileID: 4160517964587276122, guid: 3479018668d7e9a4d9a360ee93f70828, type: 3}
+  amplifier: 10
 --- !u!61 &1892282169
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14698,7 +14763,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -14900,7 +14965,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 68e7c2a75dcf9f849ad56a5043aff467, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -14927,6 +14992,8 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
+  deathFX: {fileID: 4160517964587276122, guid: 3479018668d7e9a4d9a360ee93f70828, type: 3}
+  amplifier: 10
 --- !u!61 &2076889860
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14956,7 +15023,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -15074,7 +15141,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 68e7c2a75dcf9f849ad56a5043aff467, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -15101,6 +15168,8 @@ MonoBehaviour:
   manager: {fileID: 168173609}
   direction: {x: 1, y: 0}
   speed: 1
+  deathFX: {fileID: 4160517964587276122, guid: 3479018668d7e9a4d9a360ee93f70828, type: 3}
+  amplifier: 10
 --- !u!61 &2107182850
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15130,7 +15199,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
