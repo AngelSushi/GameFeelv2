@@ -98,9 +98,9 @@ public class PlayerManager : MonoBehaviour
                 GameObject _pew = Instantiate(_pewPewMunition, _pewPewPos.transform.position, Quaternion.identity, _pewPewParent.transform);
                 Vector3 fxPos = _pew.transform.position;
                 fxPos.z = -1;
-                shootFX.transform.position = fxPos;
-                shootFX.SetActive(true);
-                shootFX.GetComponent<ParticleSystem>().Play();
+//                shootFX.transform.position = fxPos;
+  //              shootFX.SetActive(true);
+    //            shootFX.GetComponent<ParticleSystem>().Play();
             }
             StartCoroutine(ShootCD());
         }

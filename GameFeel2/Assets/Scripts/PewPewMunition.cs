@@ -22,16 +22,12 @@ public class PewPewMunition : CoroutineSystem
         if (collision != null && collision.gameObject.tag == "PewPewKillZone")
         {
             Debug.Log("kill zone");           
-            PlayerManager.Instance.shootFX.GetComponent<ParticleSystem>().Stop();
-            PlayerManager.Instance.shootFX.SetActive(false);
             Destroy(gameObject);
         }
 
         if (collision != null && collision.gameObject.tag == "Enemy" && sender == null)
         {
             Debug.Log("enemy");
-            PlayerManager.Instance.shootFX.GetComponent<ParticleSystem>().Stop();
-            PlayerManager.Instance.shootFX.SetActive(false);
 
             EnemyManager.Instance.impact.Play();
 
@@ -45,8 +41,6 @@ public class PewPewMunition : CoroutineSystem
         if (collision != null && ((collision.gameObject.tag == "PewPew" && transform.tag == "PewPewEnemy") || (transform.tag == "PewPew" && collision.gameObject.tag == "PewPewEnemy")))
         {
             Debug.Log("pewpew");
-            PlayerManager.Instance.shootFX.GetComponent<ParticleSystem>().Stop();
-            PlayerManager.Instance.shootFX.SetActive(false);
             Destroy(shootFXInstance);
             Destroy(gameObject);
         }

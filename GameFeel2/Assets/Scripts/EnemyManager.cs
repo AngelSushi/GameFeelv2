@@ -81,12 +81,12 @@ public class EnemyManager : CoroutineSystem
         GameObject _pew = Instantiate(_pewPewMunition, enemy.transform.position + Vector3.up * -1, Quaternion.identity);
         _pew.GetComponent<PewPewMunition>().sender = enemy;
 
-        GameObject shootFXInstance = Instantiate(shootFX, _pew.transform.position, Quaternion.Euler(90,0,0));
-        shootFXInstance.SetActive(true);
-        shootFXInstance.GetComponent<ParticleSystem>().Play();
+//        GameObject shootFXInstance = Instantiate(shootFX, _pew.transform.position, Quaternion.Euler(90,0,0));
+  //      shootFXInstance.SetActive(true);
+     //   shootFXInstance.GetComponent<ParticleSystem>().Play();
         
 
-        _pew.GetComponent<PewPewMunition>().shootFXInstance = shootFXInstance;
+        //_pew.GetComponent<PewPewMunition>().shootFXInstance = shootFXInstance;
         StartCoroutine(ShootCD());
         
     }
@@ -100,7 +100,7 @@ public class EnemyManager : CoroutineSystem
 
     public void WaitExplosion(GameObject enemy)
     {
-        RunDelayed(1f, () =>
+        RunDelayed(0.3f, () =>
         {
 
             Debug.Log("destroyed");
