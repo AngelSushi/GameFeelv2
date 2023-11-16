@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,6 +6,15 @@ using UnityEngine.InputSystem;
 
 public class PlayerManager : MonoBehaviour
 {
+
+    private static PlayerManager _instance;
+
+    public static PlayerManager Instance
+    {
+        get => _instance;
+        set => _instance = value;
+    }
+    
     [Header("Stats")]
     [SerializeField] private float _speed = 1;
     [SerializeField] private float _shootCD = 1;
@@ -19,7 +29,18 @@ public class PlayerManager : MonoBehaviour
     private bool _moveRight = false;
     private bool _canShoot = true;
 
+    public GameObject shootFX;
     // Update is called once per frame
+
+
+    private void Awake()
+    {
+        if (_instance == null)
+        {
+            _instance = this;
+        }
+    }
+
     void Update()
     {
         if (_moveRight)
@@ -65,7 +86,10 @@ public class PlayerManager : MonoBehaviour
         {
             foreach(GameObject _pewPewPos in _pewPewPosisition)
             {
-                GameObject _pew = Instantiate(_pewPewMunition, _pewPewPos.transform.position + Vector3.up, Quaternion.identity, _pewPewParent.transform);
+                GameObject _pew = Instantiate(_pewPewMunition, _pewPewPos.transform.position, Quaternion.identity, _pewPewParent.transform);
+                shootFX.transform.position = _pew.transform.position;
+                shootFX.SetActive(true);
+                shootFX.GetComponent<ParticleSystem>().Play();
             }
             StartCoroutine(ShootCD());
         }
