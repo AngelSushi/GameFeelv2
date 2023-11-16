@@ -18,9 +18,11 @@ public class PlayerManager : MonoBehaviour
     }
     
     [Header("Stats")]
+    [SerializeField] private int _health = 3;
     [SerializeField] private float _speed = 1;
     [SerializeField] private float _shootCD = 1;
     [SerializeField] private Color _pewPewHitColor;
+    private bool _canMove;
 
     [Header("Component")]
     [SerializeField] private GameObject _pewPewMunition;
@@ -47,13 +49,13 @@ public class PlayerManager : MonoBehaviour
 
     void Update()
     {
-        if (_moveRight)
+        if (_moveRight && _canMove)
         {
             transform.Translate(Vector2.right * _speed * Time.deltaTime);
             PlayerUpgrade.Instance.playerPos = transform.position;
         }
 
-        if (_moveLeft)
+        if (_moveLeft && _canMove)
         {
             transform.Translate(Vector2.left * _speed * Time.deltaTime);
             PlayerUpgrade.Instance.playerPos = transform.position;
@@ -109,6 +111,13 @@ public class PlayerManager : MonoBehaviour
     [Button]
     public void GetHit()
     {
+        if (_health > 0)
+            _health--;
+        else if (_health == 0)
+            Destroy(gameObject);
+
+        _canMove = false;
+
         Sequence mySequence = DOTween.Sequence();
         mySequence.Append(_pewPewPlayerRenderer.DOColor(_pewPewHitColor, .5f));
         mySequence.Append(_pewPewPlayerRenderer.DOColor(Color.white, .5f));
@@ -116,5 +125,10 @@ public class PlayerManager : MonoBehaviour
         mySequence.Append(_pewPewPlayerRenderer.DOColor(Color.white, .5f));
 
         mySequence.Play();
+        mySequence.OnComplete(() =>
+        {
+            if (_health == 0)
+                Destroy(gameObject);
+        });
     }
 }
