@@ -417,7 +417,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: d8ba500aee79a1642a75a2f2623833de, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3699134, g: 0, b: 0.5188679, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -837,7 +837,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 5fe9ca15414fb1d4fbe60b1b23c77350, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7542692, g: 0, b: 0.7830189, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -11082,8 +11082,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5280389791824062546, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+      propertyPath: _speed
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280389791824062546, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
       propertyPath: shootFX
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280389791824062546, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+      propertyPath: _shootCD
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5280389791824062546, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
       propertyPath: damageSFX
@@ -11415,7 +11423,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 83c1491bac7f82e4393814d268c562a9, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3699134, g: 0, b: 0.5188679, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -11584,7 +11592,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: c15e82408ffa41f4980faed9c9910acf, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3699134, g: 0, b: 0.5188679, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
