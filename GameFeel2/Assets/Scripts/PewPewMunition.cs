@@ -37,7 +37,7 @@ public class PewPewMunition : MonoBehaviour
             Destroy(gameObject);
         }
         
-        if (collision != null && collision.gameObject.tag == "Player")
+        if (collision != null && collision.gameObject.tag == "Player" && sender != null)
         {
             Debug.Log("player");
             Destroy(gameObject);
