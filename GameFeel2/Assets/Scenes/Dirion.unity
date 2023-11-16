@@ -302,6 +302,42 @@ PrefabInstance:
       propertyPath: m_Name
       value: PewPewPlayerPrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 3228121632548416632, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4812621592300687115, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4812621592300687115, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4812621592300687115, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280389791824062546, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+      propertyPath: _pewPewHitColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280389791824062546, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+      propertyPath: _pewPewHitColor.b
+      value: 0.4764151
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280389791824062546, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+      propertyPath: _pewPewHitColor.g
+      value: 0.4764151
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280389791824062546, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+      propertyPath: _pewPewHitColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5280389791824062546, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+      propertyPath: _pewPewPlayerRenderer
+      value: 
+      objectReference: {fileID: 1872257616}
     - target: {fileID: 5280389791824062546, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
       propertyPath: _pewPewPosisition.Array.data[0]
       value: 
@@ -347,6 +383,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5800621463217186379, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5800621463217186379, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+      propertyPath: _pewPewPlayerRenderer
+      value: 
+      objectReference: {fileID: 1872257613}
+    - target: {fileID: 5800621463217186379, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
       propertyPath: _pewPewPosisition.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -367,6 +411,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1599719559}
     - target: {fileID: 8375798770620777486, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+      propertyPath: _pewPewPlayerRenderer
+      value: 
+      objectReference: {fileID: 1872257614}
+    - target: {fileID: 8375798770620777486, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
       propertyPath: _pewPewPosisition.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -383,6 +431,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 464254651}
     - target: {fileID: 8658622944480748852, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+      propertyPath: _pewPewPlayerRenderer
+      value: 
+      objectReference: {fileID: 1872257615}
+    - target: {fileID: 8658622944480748852, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
       propertyPath: _pewPewPosisition.Array.data[0]
       value: 
       objectReference: {fileID: 841727774}
@@ -391,6 +443,26 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+--- !u!212 &1872257613 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 6625244906092855570, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+  m_PrefabInstance: {fileID: 1872257612}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &1872257614 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 9201623447333102423, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+  m_PrefabInstance: {fileID: 1872257612}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &1872257615 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 8333894541939753581, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+  m_PrefabInstance: {fileID: 1872257612}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &1872257616 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 4812621592300687115, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+  m_PrefabInstance: {fileID: 1872257612}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1993556958 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4884757229500843424, guid: 356b01f3d3352f44f955adace791f98f, type: 3}

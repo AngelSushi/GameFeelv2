@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class EnemyManager : MonoBehaviour
 {
+    public int startEnemiesCount;
     public List<EnemyBehavior> enemies = new List<EnemyBehavior>();
 
     private static EnemyManager _instance;
@@ -25,12 +26,16 @@ public class EnemyManager : MonoBehaviour
 
     private bool _canShoot = true;
 
+    public GameObject shootFX;
+
     private void Awake()
     {
         if (_instance == null)
         {
             _instance = this;
         }
+
+        startEnemiesCount = enemies.Count;
     }
 
     private void Update()
@@ -55,6 +60,13 @@ public class EnemyManager : MonoBehaviour
         
         GameObject _pew = Instantiate(_pewPewMunition, enemy.transform.position + Vector3.up * -1, Quaternion.identity);
         _pew.GetComponent<PewPewMunition>().sender = enemy;
+
+        GameObject shootFXInstance = Instantiate(shootFX, _pew.transform.position, Quaternion.Euler(90,0,0));
+        shootFXInstance.SetActive(true);
+        shootFXInstance.GetComponent<ParticleSystem>().Play();
+        
+
+        _pew.GetComponent<PewPewMunition>().shootFXInstance = shootFXInstance;
         StartCoroutine(ShootCD());
         
     }
