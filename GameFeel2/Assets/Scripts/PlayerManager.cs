@@ -25,11 +25,13 @@ public class PlayerManager : MonoBehaviour
         if (_moveRight)
         {
             transform.Translate(Vector2.right * _speed * Time.deltaTime);
+            PlayerUpgrade.Instance.playerPos = transform.position;
         }
 
         if (_moveLeft)
         {
             transform.Translate(Vector2.left * _speed * Time.deltaTime);
+            PlayerUpgrade.Instance.playerPos = transform.position;
         }
     }
 
