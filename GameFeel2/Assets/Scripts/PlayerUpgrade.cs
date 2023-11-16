@@ -11,6 +11,8 @@ public class PlayerUpgrade : MonoBehaviour
     [Range(0, 3)] public int level; //Fuck les get set
     [SerializeField] private GameObject[] _spaceShips;
 
+    public Vector3 playerPos;
+
     private void Awake()
     {
         Instance = this;
@@ -19,6 +21,7 @@ public class PlayerUpgrade : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        playerPos = new Vector3(0,-4,0);
         setUpSpaceShip();
     }
 
@@ -31,7 +34,7 @@ public class PlayerUpgrade : MonoBehaviour
         foreach (var ships in _spaceShips)
             ships.SetActive(false);
 
-        _spaceShips[level].transform.position = _spaceShips[level-1].transform.position;
+        _spaceShips[level].transform.position = playerPos;
         _spaceShips[level].SetActive(true);
 
     }
