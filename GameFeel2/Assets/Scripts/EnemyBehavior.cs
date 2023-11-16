@@ -7,7 +7,7 @@ using UnityEngine;
 
 public class EnemyBehavior : MonoBehaviour
 {
-    [SerializeField] private EnemyManager manager;
+    [SerializeField] public EnemyManager manager;
 
     [SerializeField] private Vector2 direction;
 
@@ -24,8 +24,6 @@ public class EnemyBehavior : MonoBehaviour
     private int sign = 1;
 
     private float _originSpeed;
-
-    public float amplifier;
     
     private void Start()
     {

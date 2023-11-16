@@ -3,12 +3,16 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using Random = System.Random;
 
 public class EnemyManager : MonoBehaviour
 {
     public int startEnemiesCount;
     public List<EnemyBehavior> enemies = new List<EnemyBehavior>();
 
+    public List<GameObject> enemyPrefab = new List<GameObject>();
+    public Vector2 enemyWaveSize;
+    public Vector2 startEnemyPos;
     private static EnemyManager _instance;
 
     public static EnemyManager Instance
@@ -24,6 +28,8 @@ public class EnemyManager : MonoBehaviour
     
     [SerializeField] private float _shootCD = 1;
 
+    public GameObject enemiesParent;
+    
     private bool _canShoot = true;
 
     public GameObject shootFX;
@@ -35,6 +41,8 @@ public class EnemyManager : MonoBehaviour
             _instance = this;
         }
 
+        GenerateEnemies();
+        
         startEnemiesCount = enemies.Count;
     }
 
@@ -76,6 +84,27 @@ public class EnemyManager : MonoBehaviour
         _canShoot = false;
         yield return new WaitForSeconds(_shootCD);
         _canShoot = true;
+    }
+
+    public void GenerateEnemies()
+    {
+        for (int i = 0; i < enemyWaveSize.y; i++)
+        {
+            for (int j = 0; j < enemyWaveSize.x; j++)
+            {
+                int random = UnityEngine.Random.Range(0, enemyPrefab.Count);
+                GameObject enemyInstance = Instantiate(enemyPrefab[random]);
+                enemyInstance.transform.parent = enemiesParent.transform;
+
+                startEnemyPos += Vector2.right * j;
+                startEnemyPos += Vector2.up * -1 * i;
+
+                enemyInstance.transform.position = startEnemyPos;
+                
+                enemyInstance.GetComponent<EnemyBehavior>().manager = this;
+                enemies.Add(enemyInstance.GetComponent<EnemyBehavior>());
+            }
+        }
     }
 
     public List<EnemyBehavior> FindBoundsMaxEnemies()

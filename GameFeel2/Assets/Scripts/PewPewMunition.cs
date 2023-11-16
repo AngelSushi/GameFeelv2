@@ -35,6 +35,11 @@ public class PewPewMunition : CoroutineSystem
 
             EnemyManager.Instance.enemies.Remove(collision.gameObject.GetComponent<EnemyBehavior>());
             Destroy(collision.gameObject);
+
+            if (EnemyManager.Instance.enemies.Count == 0)
+            {
+                EnemyManager.Instance.GenerateEnemies();
+            }
             
             //GameObject deathFXInstance = Instantiate(collision.gameObject.GetComponent<EnemyBehavior>().deathFX,collision.gameObject.transform.position,Quaternion.identity);
             //deathFXInstance.SetActive(true);
