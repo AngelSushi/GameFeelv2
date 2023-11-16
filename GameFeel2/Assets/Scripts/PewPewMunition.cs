@@ -50,6 +50,7 @@ public class PewPewMunition : MonoBehaviour
         {
             Destroy(shootFXInstance);
             Debug.Log("player");
+            collision.GetComponent<PlayerManager>().GetHit();
             Destroy(gameObject);
         }
     }
