@@ -14,6 +14,18 @@ public class EnemyManager : MonoBehaviour
     {
         get => _instance;
     }
+    
+    
+    
+    [Header("Component")]
+    [SerializeField] private GameObject _pewPewMunition;
+    
+    
+    [SerializeField] private float _shootCD = 1;
+
+    private bool _canShoot = true;
+
+    public GameObject shootFX;
 
     private void Awake()
     {
@@ -31,9 +43,36 @@ public class EnemyManager : MonoBehaviour
 
             if (hit.collider != null)
             {
-                enemy.Shoot();
+                Shoot(enemy);
             }
         }
+    }
+    
+    public void Shoot(EnemyBehavior enemy)
+    {
+        if (!_canShoot)
+        {
+            return;
+        }
+        
+        GameObject _pew = Instantiate(_pewPewMunition, enemy.transform.position + Vector3.up * -1, Quaternion.identity);
+        _pew.GetComponent<PewPewMunition>().sender = enemy;
+
+        GameObject shootFXInstance = Instantiate(shootFX, _pew.transform.position, Quaternion.Euler(90,0,0));
+        shootFXInstance.SetActive(true);
+        shootFXInstance.GetComponent<ParticleSystem>().Play();
+        
+
+        _pew.GetComponent<PewPewMunition>().shootFXInstance = shootFXInstance;
+        StartCoroutine(ShootCD());
+        
+    }
+
+    IEnumerator ShootCD()
+    {
+        _canShoot = false;
+        yield return new WaitForSeconds(_shootCD);
+        _canShoot = true;
     }
 
     public List<EnemyBehavior> FindBoundsMaxEnemies()
