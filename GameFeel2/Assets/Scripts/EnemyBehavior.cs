@@ -29,6 +29,7 @@ public class EnemyBehavior : MonoBehaviour
     {
         StartCoroutine(Moove());
         _originSpeed = speed;
+        deathFX = transform.GetChild(0).gameObject;
     }
 
     

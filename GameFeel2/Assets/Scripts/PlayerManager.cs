@@ -39,6 +39,8 @@ public class PlayerManager : MonoBehaviour
     public GameObject shootFX;
     // Update is called once per frame
 
+    public AudioSource damageSFX;
+
 
     private void Awake()
     {
@@ -94,7 +96,9 @@ public class PlayerManager : MonoBehaviour
             foreach(GameObject _pewPewPos in _pewPewPosisition)
             {
                 GameObject _pew = Instantiate(_pewPewMunition, _pewPewPos.transform.position, Quaternion.identity, _pewPewParent.transform);
-                shootFX.transform.position = _pew.transform.position;
+                Vector3 fxPos = _pew.transform.position;
+                fxPos.z = -1;
+                shootFX.transform.position = fxPos;
                 shootFX.SetActive(true);
                 shootFX.GetComponent<ParticleSystem>().Play();
             }
@@ -117,10 +121,12 @@ public class PlayerManager : MonoBehaviour
         else if (_health == 0)
             Destroy(gameObject);
 
-        _canMove = false;
+        //_canMove = false;
 
         if(_hitParticule != null)
             _hitParticule.Play();
+        
+        damageSFX.Play();
 
         Sequence mySequence = DOTween.Sequence();
         mySequence.Append(_pewPewPlayerRenderer.DOColor(_pewPewHitColor, .5f));
@@ -129,7 +135,7 @@ public class PlayerManager : MonoBehaviour
         mySequence.Play();
         mySequence.OnComplete(() =>
         {
-            _canMove = true;
+            //_canMove = true;
             if (_health == 0)
                 Destroy(gameObject);
         });

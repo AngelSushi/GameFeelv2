@@ -33,25 +33,12 @@ public class PewPewMunition : CoroutineSystem
             PlayerManager.Instance.shootFX.GetComponent<ParticleSystem>().Stop();
             PlayerManager.Instance.shootFX.SetActive(false);
 
-            EnemyManager.Instance.enemies.Remove(collision.gameObject.GetComponent<EnemyBehavior>());
-            Destroy(collision.gameObject);
+            EnemyManager.Instance.impact.Play();
 
-            if (EnemyManager.Instance.enemies.Count == 0)
-            {
-                EnemyManager.Instance.GenerateEnemies();
-            }
-            
-            //GameObject deathFXInstance = Instantiate(collision.gameObject.GetComponent<EnemyBehavior>().deathFX,collision.gameObject.transform.position,Quaternion.identity);
-            //deathFXInstance.SetActive(true);
-            //deathFXInstance.GetComponent<ParticleSystem>().Play();
+            collision.gameObject.GetComponent<EnemyBehavior>().deathFX.SetActive(true);
+            collision.gameObject.GetComponent<EnemyBehavior>().deathFX.GetComponent<ParticleSystem>().Play();
 
-           /* RunDelayed(1f, () =>
-            {
-                EnemyManager.Instance.enemies.Remove(collision.gameObject.GetComponent<EnemyBehavior>());
-                Destroy(collision.gameObject);
-            });
-            */
-            
+            EnemyManager.Instance.WaitExplosion(collision.gameObject);
             Destroy(gameObject);
         }
 

@@ -5,7 +5,7 @@ using System.Linq;
 using UnityEngine;
 using Random = System.Random;
 
-public class EnemyManager : MonoBehaviour
+public class EnemyManager : CoroutineSystem
 {
     public int startEnemiesCount;
     public List<EnemyBehavior> enemies = new List<EnemyBehavior>();
@@ -33,6 +33,9 @@ public class EnemyManager : MonoBehaviour
     private bool _canShoot = false;
 
     public GameObject shootFX;
+
+    public AudioSource impact;
+    public AudioSource electricity;
 
     private void Awake()
     {
@@ -64,6 +67,8 @@ public class EnemyManager : MonoBehaviour
                 Shoot(enemy);
             }
         }
+        
+        electricity.gameObject.SetActive(enemies.Count == 1);
     }
     
     public void Shoot(EnemyBehavior enemy)
@@ -93,6 +98,23 @@ public class EnemyManager : MonoBehaviour
         _canShoot = true;
     }
 
+    public void WaitExplosion(GameObject enemy)
+    {
+        RunDelayed(1f, () =>
+        {
+
+            Debug.Log("destroyed");
+                
+            enemies.Remove(enemy.GetComponent<EnemyBehavior>());
+            Destroy(enemy);
+                
+            if (enemies.Count == 0)
+            {
+               GenerateEnemies();
+            }
+        });
+    }
+    
     public void GenerateEnemies()
     {
         for (int i = 0; i < enemyWaveSize.y; i++)
