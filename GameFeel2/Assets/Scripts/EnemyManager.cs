@@ -100,6 +100,7 @@ public class EnemyManager : CoroutineSystem
 
     public void WaitExplosion(GameObject enemy)
     {
+        enemy.GetComponent<SpriteRenderer>().enabled = false;
         RunDelayed(0.3f, () =>
         {
             ScoreManager.instance.SpawnScoreOnEnemy(enemy.transform.position);

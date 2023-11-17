@@ -11840,21 +11840,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: ScoreManager
       objectReference: {fileID: 0}
-    - target: {fileID: 6612709864557015582, guid: aed226e49e1be394f9216edd40c8847c, type: 3}
-      propertyPath: m_text
-      value: 0
+    - target: {fileID: 5015242649406406560, guid: aed226e49e1be394f9216edd40c8847c, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6612709864557015582, guid: aed226e49e1be394f9216edd40c8847c, type: 3}
-      propertyPath: m_HorizontalAlignment
-      value: 4
+      propertyPath: m_fontSize
+      value: 31.2
       objectReference: {fileID: 0}
-    - target: {fileID: 6655332954213198908, guid: aed226e49e1be394f9216edd40c8847c, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -16.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 6655332954213198908, guid: aed226e49e1be394f9216edd40c8847c, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -17.2
+    - target: {fileID: 6612709864557015582, guid: aed226e49e1be394f9216edd40c8847c, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 31.2
       objectReference: {fileID: 0}
     - target: {fileID: 7066854417084272372, guid: aed226e49e1be394f9216edd40c8847c, type: 3}
       propertyPath: m_LocalPosition.x
