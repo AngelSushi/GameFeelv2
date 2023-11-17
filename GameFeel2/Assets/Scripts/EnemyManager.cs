@@ -110,7 +110,7 @@ public class EnemyManager : CoroutineSystem
             enemies.Remove(enemy.GetComponent<EnemyBehavior>());
             itemscore itemScore = GameObject.Instantiate(itemScorePrefab);
             itemScore.transform.position = enemy.transform.position;
-            Destroy(enemy);
+            Destroy(enemy.gameObject);
                 
             if (enemies.Count == 0)
             {

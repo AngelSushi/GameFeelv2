@@ -28,7 +28,7 @@ public class ScoreManager : MonoBehaviour
         _scoreText.text = Score.ToString();
 
         Sequence mySequence = DOTween.Sequence();
-        mySequence.Append(_scoreText.transform.DOScale(new Vector3(1.5f, 1.5f, 1.5f), .3f));
+        mySequence.Append(_scoreText.transform.DOScale(new Vector3(2f, 2f, 2f), .3f));
         mySequence.Append(_scoreText.transform.DOScale(new Vector3(1, 1, 1), .3f));
 
         mySequence.Play();
