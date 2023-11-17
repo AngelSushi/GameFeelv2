@@ -550,6 +550,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: ScoreManager
       objectReference: {fileID: 0}
+    - target: {fileID: 6612709864557015582, guid: aed226e49e1be394f9216edd40c8847c, type: 3}
+      propertyPath: m_margin.w
+      value: 0.5796547
+      objectReference: {fileID: 0}
+    - target: {fileID: 6612709864557015582, guid: aed226e49e1be394f9216edd40c8847c, type: 3}
+      propertyPath: m_margin.x
+      value: -2.2000043
+      objectReference: {fileID: 0}
+    - target: {fileID: 6612709864557015582, guid: aed226e49e1be394f9216edd40c8847c, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 862220849722b544f924b8bf3f2256bf, type: 2}
+    - target: {fileID: 6612709864557015582, guid: aed226e49e1be394f9216edd40c8847c, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 8983260715441174630, guid: 862220849722b544f924b8bf3f2256bf, type: 2}
+    - target: {fileID: 6612709864557015582, guid: aed226e49e1be394f9216edd40c8847c, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6655332954213198908, guid: aed226e49e1be394f9216edd40c8847c, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 224.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6655332954213198908, guid: aed226e49e1be394f9216edd40c8847c, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 92.3
+      objectReference: {fileID: 0}
     - target: {fileID: 6655332954213198908, guid: aed226e49e1be394f9216edd40c8847c, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -16.699951
@@ -11492,7 +11520,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5280389791824062546, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
       propertyPath: _health
-      value: 10
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 5280389791824062546, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
       propertyPath: shootFX
@@ -11500,7 +11528,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5280389791824062546, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
       propertyPath: _shootCD
-      value: 0.5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 5280389791824062546, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
       propertyPath: damageSFX

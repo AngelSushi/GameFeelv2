@@ -39,7 +39,7 @@ public class EnemyBehavior : MonoBehaviour
 
         float factor = manager.enemies.Count / (float)manager.startEnemiesCount;
         speed = _originSpeed - ((1 - factor));
-        speed = Mathf.Clamp(speed, 0.1f, _originSpeed);
+        speed = Mathf.Clamp(speed, 0.05f, _originSpeed);
         
         transform.Translate(direction  );
 
