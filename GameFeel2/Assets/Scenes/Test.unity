@@ -316,6 +316,7 @@ MonoBehaviour:
   - {fileID: 7924026606265234908, guid: 5163e2898bc889441841834c40f85232, type: 3}
   enemyWaveSize: {x: 8, y: 3}
   startEnemyPos: {x: -3, y: 4}
+  itemScorePrefab: {fileID: 0}
   _pewPewMunition: {fileID: 4025783536268090546, guid: 302a24afd9fb6c14fb3498b612331273, type: 3}
   _shootCD: 1
   enemiesParent: {fileID: 1584915607}
