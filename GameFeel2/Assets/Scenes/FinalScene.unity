@@ -11438,6 +11438,46 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3771127751957362739, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+      propertyPath: m_ActionEvents.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3771127751957362739, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+      propertyPath: m_ActionEvents.Array.data[3].m_ActionId
+      value: eea8d960-9147-438b-8112-ef2676f985b6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3771127751957362739, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+      propertyPath: m_ActionEvents.Array.data[3].m_ActionName
+      value: Player/ResetScene[/Keyboard/y]
+      objectReference: {fileID: 0}
+    - target: {fileID: 3771127751957362739, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+      propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3771127751957362739, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+      propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3771127751957362739, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+      propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1833748407}
+    - target: {fileID: 3771127751957362739, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+      propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3771127751957362739, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+      propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Resy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3771127751957362739, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+      propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayerManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3771127751957362739, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+      propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3887964857812247137, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -11590,6 +11630,17 @@ PrefabInstance:
       addedObject: {fileID: 1288421121}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+--- !u!114 &1833748407 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5280389791824062546, guid: 356b01f3d3352f44f955adace791f98f, type: 3}
+  m_PrefabInstance: {fileID: 1833748406}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7a039e4ba7067b40b19b57581239566, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1892855599
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,6 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -86,6 +87,14 @@ public class PlayerManager : MonoBehaviour
         else if (context.canceled)
         {
             _moveRight = false;
+        }
+    }
+
+    public void Resy(InputAction.CallbackContext context)
+    {
+        if (context.started)
+        {
+            SceneManager.LoadScene("FinalScene");
         }
     }
 
