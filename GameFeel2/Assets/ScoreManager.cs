@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -25,5 +26,11 @@ public class ScoreManager : MonoBehaviour
     {
         Score += _scoreToAdd;
         _scoreText.text = Score.ToString();
+
+        Sequence mySequence = DOTween.Sequence();
+        mySequence.Append(_scoreText.transform.DOScale(new Vector3(1.5f, 1.5f, 1.5f), .3f));
+        mySequence.Append(_scoreText.transform.DOScale(new Vector3(1, 1, 1), .3f));
+
+        mySequence.Play();
     }
 }
