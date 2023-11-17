@@ -22,39 +22,25 @@ public class PewPewMunition : CoroutineSystem
         if (collision != null && collision.gameObject.tag == "PewPewKillZone")
         {
             Debug.Log("kill zone");           
-            PlayerManager.Instance.shootFX.GetComponent<ParticleSystem>().Stop();
-            PlayerManager.Instance.shootFX.SetActive(false);
             Destroy(gameObject);
         }
 
         if (collision != null && collision.gameObject.tag == "Enemy" && sender == null)
         {
             Debug.Log("enemy");
-            PlayerManager.Instance.shootFX.GetComponent<ParticleSystem>().Stop();
-            PlayerManager.Instance.shootFX.SetActive(false);
 
-            EnemyManager.Instance.enemies.Remove(collision.gameObject.GetComponent<EnemyBehavior>());
-            Destroy(collision.gameObject);
-            
-            //GameObject deathFXInstance = Instantiate(collision.gameObject.GetComponent<EnemyBehavior>().deathFX,collision.gameObject.transform.position,Quaternion.identity);
-            //deathFXInstance.SetActive(true);
-            //deathFXInstance.GetComponent<ParticleSystem>().Play();
+            EnemyManager.Instance.impact.Play();
 
-           /* RunDelayed(1f, () =>
-            {
-                EnemyManager.Instance.enemies.Remove(collision.gameObject.GetComponent<EnemyBehavior>());
-                Destroy(collision.gameObject);
-            });
-            */
-            
+            collision.gameObject.GetComponent<EnemyBehavior>().deathFX.SetActive(true);
+            collision.gameObject.GetComponent<EnemyBehavior>().deathFX.GetComponent<ParticleSystem>().Play();
+
+            EnemyManager.Instance.WaitExplosion(collision.gameObject);
             Destroy(gameObject);
         }
 
         if (collision != null && ((collision.gameObject.tag == "PewPew" && transform.tag == "PewPewEnemy") || (transform.tag == "PewPew" && collision.gameObject.tag == "PewPewEnemy")))
         {
             Debug.Log("pewpew");
-            PlayerManager.Instance.shootFX.GetComponent<ParticleSystem>().Stop();
-            PlayerManager.Instance.shootFX.SetActive(false);
             Destroy(shootFXInstance);
             Destroy(gameObject);
         }
