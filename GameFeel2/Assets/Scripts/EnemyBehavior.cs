@@ -32,9 +32,6 @@ public class EnemyBehavior : MonoBehaviour
         deathFX = transform.GetChild(0).gameObject;
     }
 
-    
-
-
     private IEnumerator Moove()
     {
         yield return new WaitForSeconds(speed);

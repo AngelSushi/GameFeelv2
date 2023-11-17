@@ -14,6 +14,7 @@ public class EnemyManager : CoroutineSystem
     public Vector2 enemyWaveSize;
     public Vector2 startEnemyPos;
     private static EnemyManager _instance;
+    [SerializeField] private itemscore itemScorePrefab;
 
     public static EnemyManager Instance
     {
@@ -106,6 +107,8 @@ public class EnemyManager : CoroutineSystem
             Debug.Log("destroyed");
                 
             enemies.Remove(enemy.GetComponent<EnemyBehavior>());
+            itemscore itemScore = GameObject.Instantiate(itemScorePrefab);
+            itemScore.transform.position = enemy.transform.position;
             Destroy(enemy);
                 
             if (enemies.Count == 0)
